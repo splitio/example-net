@@ -17,8 +17,11 @@ namespace Splitio.ExampleNet.Controllers
         {
             sdk = HttpContext.Application["sdk"] as SelfRefreshingClient;
 
+            // CHANGE THIS: Copy and paste the feature name from Split UI
             String featureName = "<feature name here>";
-            String userKey = "<user ID here>";
+            
+            // Change this to represent your user or account id. (usually a dynamic value)
+            String userKey = "userId-1";
 
             var result = sdk.GetTreatment(userKey, featureName);
 
