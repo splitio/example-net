@@ -13,15 +13,21 @@ namespace Splitio.ExampleNet.Controllers
         //
         // GET: /Automation/
 
-        public ActionResult Index()
+        public ActionResult Index(string featureName, string userKey)
         {
             sdk = HttpContext.Application["sdk"] as SelfRefreshingClient;
 
-            // CHANGE THIS: Copy and paste the feature name from Split UI
-            String featureName = "<feature name here>";
-            
-            // Change this to represent your user or account id. (usually a dynamic value)
-            String userKey = "userId-1";
+            if (string.IsNullOrEmpty(featureName))
+            {
+                // CHANGE THIS: Copy and paste the feature name from Split UI
+                featureName = "<feature name here>";
+            }
+
+            if (string.IsNullOrEmpty(userKey))
+            {
+                // Change this to represent your user or account id. (usually a dynamic value)
+                userKey = "userId-1";
+            }
 
             var result = sdk.GetTreatment(userKey, featureName);
 
