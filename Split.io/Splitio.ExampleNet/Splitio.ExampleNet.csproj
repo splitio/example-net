@@ -69,7 +69,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Splitio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Splitio.3.1.2\lib\net40\Splitio.dll</HintPath>
+      <HintPath>..\packages\Splitio.3.3.0-rc312\lib\net40\Splitio.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="StackExchange.Redis, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
