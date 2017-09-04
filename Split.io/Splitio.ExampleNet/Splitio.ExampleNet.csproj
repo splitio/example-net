@@ -57,7 +57,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Splitio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Splitio.3.3.0\lib\net40\Splitio.dll</HintPath>
+      <HintPath>..\packages\Splitio.3.3.1\lib\net40\Splitio.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
